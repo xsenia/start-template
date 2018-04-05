@@ -3,4 +3,10 @@
 
 body {
   color: #333;
-  background: #ccc; }
+  background: #ccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }

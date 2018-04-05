@@ -1,1 +1,1 @@
-# start-template
+npm i - для установки всех пакетов из package.json
