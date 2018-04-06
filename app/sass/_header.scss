@@ -1,0 +1,29 @@
+/*-------------header---------------*/
+.header {
+    border-top: 3px solid #000;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &_bottom {
+            display: none;
+        }
+    }
+    &__mobile-dropdown {
+        display: none;
+    }
+    @media (min-width: $screen-xs-min) {
+        &__row {
+           &_bottom {
+               display: flex;
+           }
+        }
+    }    
+}
+.header__mobile-dropdown {
+    &_open {
+        display: block;
+        background-color: #fff;
+    }
+}

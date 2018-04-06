@@ -1,0 +1,27 @@
+/*------------- layout ----------------*/
+html {
+  height: 199%;
+  box-sizing: border-box;
+}
+body { 
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  min-height: 100%;
+  //overflow-x: hidden;
+  font-family: Verdana, Arial;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}

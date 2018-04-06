@@ -1,0 +1,20 @@
+/*-------------service-menu---------------*/
+.service-menu {
+  display: none;
+  @media (min-width: $screen-sm-min) {
+    display: flex;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__item {
+      list-style: none;
+    }
+    &__link {
+      font-size: 12px;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}

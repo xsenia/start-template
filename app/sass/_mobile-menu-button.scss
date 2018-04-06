@@ -1,0 +1,58 @@
+/*-------------mobile-menu-button---------------*/
+.mobile-menu-button {
+    display: none;
+    @media (max-width: $screen-sm-min) { 
+        background-color: #f2f2f2;
+        border: 0 none;
+        display: block;
+        height: 50px;
+        padding: 0;
+        position: relative;
+        text-decoration: none;
+        min-width: 50px;
+        flex-basis: 50px;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        &__bar {
+            background-color: #000;
+            height: 2px;
+            left: 50%;
+            margin-left: -12px;
+            margin-top: 15px;
+            position: absolute;
+            transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
+            width: 24px;
+        }        
+    }
+}
+.mobile-menu-button__bar {
+    &_top {
+        top: 0;
+    }
+    &_middle {
+        top: 8px;
+    }
+    &_bottom {
+        top: 16px;
+    }
+}
+.mobile-menu-button {
+    &_active {
+        .mobile-menu-button__bar {
+            &_top {
+                top: 7px;
+                transform: rotate(45deg);
+                transition: all .3s ease 0s;
+            }
+            &_middle {
+                opacity: 0;
+                transition: opacity .3s ease 0s;
+            }
+            &_bottom {
+                top: 7px;
+                transform: rotate(-45deg);
+                transition: all .3s ease 0s;
+            }
+        }    
+    }
+}

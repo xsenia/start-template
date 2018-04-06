@@ -1,0 +1,59 @@
+/*-------------logo-text---------------*/
+.logo-text {
+    &__address {
+        font-family: Verdana;
+        font-width: 600;
+        font-size: 21px;
+        text-transform: uppercase;
+        color: #000;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    &__map-link {
+        display: none;
+        font-size: 12px;
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid #e10025;
+        position: relative;
+        &:before {
+            content: "";
+            bottom: -1px;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            right: 50%;
+            transition-duration: 0.3s;
+            transition-property: left, right;
+            transition-timing-function: ease-out;
+            z-index: 1;
+            background: #000;            
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+        &__map-link {
+            display: inline-block;
+        }
+    }    
+}
+
+.logo-text {
+    &_top {
+        display: none;
+    }    
+    @media (max-width: $screen-xs-max) {
+        &_top {
+            display: flex;
+        }
+    }
+}
+
+/*state*/
+.logo-text__map-link {
+    &:hover {
+        &::before {
+            left: 0;
+            right: 0;
+          }
+    }
+}

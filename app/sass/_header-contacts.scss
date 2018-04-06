@@ -1,0 +1,36 @@
+/*-------------header-contacts-----------------*/
+.header-contacts {
+  display: none;
+  @media (min-width: $screen-xs-min) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__phone {
+      font-family: Verdana;
+      font-size: 18px;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    &__mail {
+      display: none;
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    &__mail {
+      display: flex;
+      font-size: 12px;
+      text-decoration: none;
+      border-bottom: 1px dotted $link-color;
+      color: #000;
+    }
+  }
+}
+
+.header-contacts {
+  &__mail {
+    &:hover {
+      border-bottom: 0px;
+    }
+  }
+}

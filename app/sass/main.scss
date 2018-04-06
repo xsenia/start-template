@@ -1,10 +1,12 @@
+@import 'variables';
+@import 'layout';
+
+@import 'header';
+@import 'catalog-menu';
+@import 'main-menu';
+@import 'service-menu';
+@import 'mobile-menu-button';
+@import 'logo-text';
+@import 'header-contacts';
+
 @import 'footer';
-
-$primary-color: #333;
-
-body {
-  color: $primary-color;
-  background: #ccc;
-  display: flex;
-  border-radius: 2px;
-}
