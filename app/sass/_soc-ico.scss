@@ -1,0 +1,54 @@
+/*-------------soc-ico---------------*/
+.soc-ico {
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: 100%;
+  max-width: 100%;
+  justify-content: flex-end;
+  &__soc-youtube {
+    margin-left: 5px;  
+  }
+  &__soc-fb {
+     margin-left: 5px; 
+  }
+  &__soc-twitter {
+     margin-left: 5px; 
+  }
+  &__soc-vk {
+     margin-left: 5px; 
+  }
+  @media (min-width: $screen-sm-min) {
+    flex-basis: 25%;
+    max-width: 25%;
+    order: 2;
+  }
+  @media (min-width: $screen-md-min) {
+    flex-basis: 16.66%;
+    max-width: 16.66%;
+  }
+
+}
+.soc-youtube {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/ico.png) 0 -215px no-repeat;
+}
+.soc-fb {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/ico.png) 0 -265px no-repeat;
+}
+.soc-twitter {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/ico.png) 0 -311px no-repeat;
+}
+.soc-vk {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/ico.png) 0 -356px no-repeat;
+}

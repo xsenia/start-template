@@ -1,0 +1,20 @@
+/*-------------copyright-row---------------*/
+.copyright-row {
+    flex-direction: 100%;
+    min-width: 100%;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 3;
+    &__company {
+        font-size: 10px;
+        font-family: Verdana;
+    }
+    &__copyright {
+        font-size: 10px;
+        font-family: Verdana;
+    }
+    
+}

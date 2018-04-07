@@ -25,3 +25,10 @@ body {
   margin-right: auto;
   box-sizing: border-box;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $screen-xs-min) {
+    flex-direction: row;
+  }
+}

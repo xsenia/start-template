@@ -1,13 +1,14 @@
 /*-------------logo-text---------------*/
 .logo-text {
     &__address {
-        font-family: Verdana;
-        font-width: 600;
+        font-family: Verdana, Arial;
+        font-weight: 600;
         font-size: 21px;
         text-transform: uppercase;
         color: #000;
         text-decoration: none;
         white-space: nowrap;
+        margin-left: 11px;
     }
     &__map-link {
         display: none;
@@ -16,6 +17,8 @@
         text-decoration: none;
         border-bottom: 1px solid #e10025;
         position: relative;
+        font-family: Arial, Verdana;
+        transition: color 0.3s;
         &:before {
             content: "";
             bottom: -1px;
@@ -24,10 +27,10 @@
             position: absolute;
             right: 50%;
             transition-duration: 0.3s;
-            transition-property: left, right;
+            transition-property: left, right,color;
             transition-timing-function: ease-out;
             z-index: 1;
-            background: #000;            
+            background: #fff;            
         }
     }
     @media (min-width: $screen-sm-min) {
@@ -51,6 +54,7 @@
 /*state*/
 .logo-text__map-link {
     &:hover {
+        color: $link-color;
         &::before {
             left: 0;
             right: 0;

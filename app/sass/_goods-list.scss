@@ -1,0 +1,13 @@
+/*-------------goods-list---------------*/
+.goods-list {
+  flex-basis: 100%;
+  max-width: 100%;  
+  @media (min-width: $screen-sm-min) {
+    flex-basis: 65%;
+    max-width: 65%; 
+  }
+  @media (min-width: $screen-md-min) {
+    flex-basis: 75%;
+    max-width: 75%; 
+  }
+}

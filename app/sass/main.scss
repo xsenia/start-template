@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'layout';
 
+
 @import 'header';
 @import 'catalog-menu';
 @import 'main-menu';
@@ -9,4 +10,46 @@
 @import 'logo-text';
 @import 'header-contacts';
 
+
+@import 'main-block';
+@import 'goods-list';
+@import 'goods-card';
+@import 'order-forms';
+
+
 @import 'footer';
+@import 'footer-nav';
+@import 'soc-ico';
+@import 'copyright-row';
+
+.demo-dropdown {
+  margin-top: 2px;
+  padding: 0 15px;
+  overflow: auto;
+  color: #000;
+  background: #ccc;
+}
+
+.demo-header {
+  padding: 10px 20px;
+  border: 0;
+  color: #000;
+  text-decoration: none;      
+  background: #ccc;
+  font-weight: bold;
+  font-size: 18px;
+}
+.demo-header:hover {
+  color: #999;
+}
+
+
+.demo-dropdown {
+  -webkit-transition: max-height .5s, padding .5s;
+  transition: max-height .5s, padding .5s;
+  max-height: 0;
+}
+.collapse-wrap.open .demo-dropdown {
+  max-height: 1500px;
+  padding: 15px;    
+}
