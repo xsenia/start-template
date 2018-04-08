@@ -1,0 +1,40 @@
+/*-------------collapse---------------*/
+.collapse {
+  box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  &__dropdown {    
+    overflow: hidden;
+    color: #000;
+    background: #fff;
+    transition: max-height .5s, padding .5s;
+    max-height: 0;
+  }
+  &__dropdown-inner {
+    padding: 10px 15px;
+  }
+  &__header {
+    padding: 12px 20px 9px;
+    border: 0;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: Arial;
+    text-decoration: none;      
+    background: $link-color;
+    cursor: pointer;
+    border-bottom: 1px solid #b90101;
+  }
+}
+
+.collapse__header {
+  &:hover {
+    background-color: #d10224;
+  }
+}
+
+
+.collapse__item.open .collapse__dropdown {
+  max-height: 1500px;
+  //padding: 15px;    
+}

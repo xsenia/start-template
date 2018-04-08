@@ -1,3 +1,4 @@
+//header-mobile-menu
 var buttonMobile = document.getElementById('mobile-menu-button');
 var menuDropdownMobile = document.getElementById('header__mobile-dropdown');
 
@@ -6,17 +7,20 @@ buttonMobile.onclick = function() {
   menuDropdownMobile.classList.toggle('header__mobile-dropdown_open');
 }
 
-var collapseWrap = document.getElementsByClassName('collapse-wrap');
+
+
+//collapse-block
+var collapseWrap = document.getElementsByClassName('collapse__item');
       
 for (var i = 0; i < collapseWrap.length; i++) {
 
-collapseWrap[i].addEventListener("click", collapse, false);
+  collapseWrap[i].addEventListener("click", collapse, false);
 
-collapseWrap[i].onmousedown = function(event){	
-  collapseWrap[i].onmouseup = function(){
-    collapseWrap[i].click = null;
+  collapseWrap[i].onmousedown = function(event){  
+    collapseWrap[i].onmouseup = function(){
+      collapseWrap[i].click = null;
+    }
   }
-}
 
 }
 
