@@ -3,6 +3,8 @@
   box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
+  max-width: 420px;
+  margin: 0 auto;
   &__dropdown {    
     overflow: hidden;
     color: #000;

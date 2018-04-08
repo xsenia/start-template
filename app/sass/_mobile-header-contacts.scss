@@ -1,0 +1,30 @@
+/*-------------mobile-header-contacts---------------*/
+.mobile-header-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 39px;
+   &__phone {
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.3s;
+   }
+   &__letter {
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.3s;
+   }
+}
+.mobile-header-contacts__phone {
+    &:hover {
+        color: $link-color;
+    }
+}
+.mobile-header-contacts__letter {
+    &:hover {
+        color: $link-color;
+    }
+}

@@ -13,6 +13,9 @@
         flex-basis: 50px;
         border-radius: 5px;
         border: 2px solid #ccc;
+        position: absolute;
+        top: 20px;
+        right: 20px;
         &__bar {
             background-color: #000;
             height: 2px;

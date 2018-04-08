@@ -3,12 +3,16 @@
     &__address {
         font-family: Verdana, Arial;
         font-weight: 600;
-        font-size: 21px;
+        font-size: 14px;
         text-transform: uppercase;
         color: #000;
         text-decoration: none;
         white-space: nowrap;
         margin-left: 11px;
+        transition: color 0.3s;
+        @media (min-width: 590px) {
+            font-size: 21px;
+        }     
     }
     &__map-link {
         display: none;
@@ -33,11 +37,12 @@
             background: #fff;            
         }
     }
+    
     @media (min-width: $screen-sm-min) {
         &__map-link {
             display: inline-block;
         }
-    }    
+    }   
 }
 
 .logo-text {
@@ -47,8 +52,10 @@
     @media (max-width: $screen-xs-max) {
         &_top {
             display: flex;
+            margin-right: auto;
         }
     }
+    
 }
 
 /*state*/
@@ -59,5 +66,10 @@
             left: 0;
             right: 0;
           }
+    }
+}
+.logo-text__address {
+    &:hover {
+        color: $link-color;        
     }
 }

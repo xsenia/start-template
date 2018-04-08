@@ -1,7 +1,7 @@
 /*-------------catalog-menu---------------*/
 .catalog-menu {
   display: none;
-  @media (min-width: $screen-xs-min) {
+  @media (min-width: $screen-sm-min) {
     display: flex;
     padding: 2px; 
     box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.17);

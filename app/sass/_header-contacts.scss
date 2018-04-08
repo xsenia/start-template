@@ -2,24 +2,31 @@
 .header-contacts {
   display: none;
   @media (min-width: $screen-xs-min) {
-    padding-left: 36px;
-    background: url(../img/ico.png) 0 11px no-repeat;
+    padding: 0px 0 10px 36px;
+    //background: url(../img/ico.png) 0 8px no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     &__phone {
       font-family: Verdana;
-      font-size: 18px;
       color: #000;
       font-weight: 600;
       text-decoration: none;
       transition: color 0.3s;
+      font-size: 14px;
+      @media (min-width: 590px) {
+          font-size: 18px;
+      } 
     }
     &__mail {
       display: none;
     }
   }
   @media (min-width: $screen-sm-min) {
+    background-position: 0 20px;
+    &__phone {
+      font-size: 18px;
+    }
     &__mail {
       display: flex;
       font-size: 12px;
