@@ -5,6 +5,9 @@ var menuDropdownMobile = document.getElementById('header-mobile-dropdown');
 buttonMobile.onclick = function() {
   buttonMobile.classList.toggle('mobile-menu-button_active');
   menuDropdownMobile.classList.toggle('header-mobile-dropdown_open');
+  //document.body.style.overflow = "hidden";
+  var body = document.body;
+  body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
 }
 
 

@@ -25,5 +25,8 @@
 .main-menu__link {  
   &:hover {
     color: $link-color;
-  }    
+  }
+  &_active {
+    color: $link-color;
+  }
 }

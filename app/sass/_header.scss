@@ -1,20 +1,38 @@
 /*-------------header---------------*/
 .header {
     border-top: 3px solid #000;
+    border-bottom: 2px solid #efe7e7;
     padding: 10px 0 0 0;
-    height: 90px;
+    min-height: 90px;
     box-sizing: border-box;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 3;
+    @media (max-width: $screen-sm-max ) and (orientation: landscape) {
+        min-height: 130px;
+    }
+    @media (min-width: $screen-sm-min) {
+        position: relative;
+        border-bottom: 3px solid #fff;
+    }
     &__row {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media (min-width: $screen-sm-min) {
+            align-items: center;
+        }
         &_bottom {
             display: none;
         }
     }
     &__logo {
+        display: block;
         flex-basis: 60px;
         padding-left: 9px;
     }

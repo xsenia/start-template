@@ -1,7 +1,7 @@
 /*-------------mobile-menu-button---------------*/
 .mobile-menu-button {
     display: none;
-    @media (max-width: $screen-sm-min) { 
+    @media (max-width: $screen-sm-max) { 
         background-color: #f2f2f2;
         border: 0 none;
         display: block;

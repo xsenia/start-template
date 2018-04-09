@@ -24,7 +24,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 7px;
+      top: 6px;
       right: 3px;
       display: block;
       width: 15px;
@@ -35,7 +35,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 11px;
+      top: 10px;
       right: 8px;
       display: block;
       width: 4px;
@@ -52,6 +52,9 @@
     color: #000;
     text-decoration: none;
     border-bottom: 1px solid $link-color;
+    position: relative;
+    overflow-x: hidden;
+    display: block;
   }
   &__img-wrap {
     text-align: center;
@@ -78,7 +81,38 @@
 
 
 .goods-card__link-more {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 1px;
+    border-radius: 5px;
+    background: $link-color;
+  }
   &:hover {
-    border-bottom: 0;
+    border-bottom-color: #fff;    
+  }
+  &:hover::before {
+    animation: underline 1s linear;
   }
 }
+
+@keyframes underline {
+  0% {
+    width: 0%;
+    left: 0%;
+    right: 100%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+    right: 100%;
+  }
+}
+

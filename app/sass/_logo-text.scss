@@ -1,5 +1,7 @@
 /*-------------logo-text---------------*/
 .logo-text {
+    display: block;
+    overflow-x: hidden;
     &__address {
         font-family: Verdana, Arial;
         font-weight: 600;
@@ -34,7 +36,7 @@
             transition-property: left, right,color;
             transition-timing-function: ease-out;
             z-index: 1;
-            background: #fff;            
+            background: $link-color;            
         }
     }
     
@@ -62,14 +64,30 @@
 .logo-text__map-link {
     &:hover {
         color: $link-color;
+        border-bottom-color: #fff;
         &::before {
-            left: 0;
-            right: 0;
-          }
+            animation: underline 1s linear;
+        }
     }
 }
 .logo-text__address {
     &:hover {
         color: $link-color;        
     }
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+    left: 0%;
+    right: 100%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+    right: 100%;
+  }
 }
